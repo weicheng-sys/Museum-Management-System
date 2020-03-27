@@ -6,7 +6,7 @@
 
   > ### ER图
   >
-  > + ![ER图](picture\ER图.png)
+  > + ![ER图](picture/ER图.png)
   >
   > 
   >
