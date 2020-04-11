@@ -18,21 +18,16 @@
   > | ---------- | ---------- | -------------- | ------------ | --------   |
   > | museumId   | museumName | museumPosition | buildingType |number|
   >
-  > ### 新闻表(News_table)
+  > ### 新闻表(News_table)（由多对多改为一对多减少一个表）
   >
-  > | 中文 | 新闻编号           | 新闻标题    | 新闻内容     | 新闻图片     | 新闻发布时间 | 发布方      |
-  > | ---- | ------------------ | ----------- | ------------ | ------------ | ------------ | ----------- |
-  > | 命名 | News_id            | News_title  | News_content | News_picture | Publish_time | Publisher   |
-  > | 类型 | int \| varchar(50) | varchar(50) | Text         | varchar(50)  | datetime     | varchar(50) |
+  > | 中文 | 涉及博物馆  | 新闻好坏    | 爬取源      | 新闻编号           | 新闻标题    | 新闻内容    | 新闻图片    | 新闻发布时间 | 发布方      |
+  > | ---- | ----------- | ----------- | ----------- | ------------------ | ----------- | ----------- | ----------- | ------------ | ----------- |
+  > | 命名 | museumName  | evaluation  | source      | newsId             | newsTitle   | newsContent | newsPicture | publishTime  | Publisher   |
+  > | 类型 | varchar(50) | varchar(50) | varchar(50) | int \| varchar(50) | varchar(50) | Text        | varchar(50) | datetime     | varchar(50) |
   >
-  > ### 博物馆新闻表（Museum_News_table）
-  >
-  > | 中文 | 编号               | 博物馆编号         | 新闻编号           |
-  > | ---- | ------------------ | ------------------ | ------------------ |
-  > | 命名 | MN_id              | Museum_id          | News_id            |
-  > | 类型 | int \| varchar(50) | int \| varchar(50) | int \| varchar(50) |
 
-### 博物馆新闻采集分析子系统
+  
+  #### 博物馆新闻采集分析子系统
 
 1. 通过程序能从主要的新闻网站上爬取博物馆相关的新闻信息，进行加工处理。主要包括以下功能：
 
