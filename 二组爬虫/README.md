@@ -16,9 +16,5 @@
 
 > + 纯scrapy框架：
 >
->   - ![框架目录解释](../picture/scrapy框架目录.png)
-
-
-
-
+>   ![框架说明](..\picture\scrapy框架目录.png)
 
