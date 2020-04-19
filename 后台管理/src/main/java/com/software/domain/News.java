@@ -1,67 +1,79 @@
 package com.software.domain;
-
-import java.util.ArrayList;
-
 public class News {
-    private String museumName;
+	private int nid;
+	private String title;
+	private String content;
+	private String nimg;
+	private String ntime;
+	private String publisher;
+	
+	public News() {
+		// TODO Auto-generated constructor stub
+	}
 
-    private String evaluation;
+	public News(int nid, String title, String content, String nimg, String ntime, String publisher) {
+		super();
+		this.nid = nid;
+		this.title = title;
+		this.content = content;
+		this.nimg = nimg;
+		this.ntime = ntime;
+		this.publisher = publisher;
+	}
 
-    private String source;
+	@Override
+	public String toString() {
+		return "News [nid=" + nid + ", title=" + title + ", content=" + content + ", nimg=" + nimg + ", ntime=" + ntime
+				+ ", publisher=" + publisher + "]";
+	}
 
-    private int newsId;
+	public int getNid() {
+		return nid;
+	}
 
-    private String newsTitle;
+	public void setNid(int nid) {
+		this.nid = nid;
+	}
 
-    private ArrayList<String> newsContent;
+	public String getTitle() {
+		return title;
+	}
 
-    public News(){}
+	public void setTitle(String title) {
+		this.title = title;
+	}
 
-    public String getMuseumName() {
-        return museumName;
-    }
+	public String getContent() {
+		return content;
+	}
 
-    public String getEvaluation() {
-        return evaluation;
-    }
+	public void setContent(String content) {
+		this.content = content;
+	}
 
-    public String getSource() {
-        return source;
-    }
+	public String getNimg() {
+		return nimg;
+	}
 
-    public int getNewsId() {
-        return newsId;
-    }
+	public void setNimg(String nimg) {
+		this.nimg = nimg;
+	}
 
-    public String getNewsTitle() {
-        return newsTitle;
-    }
+	public String getNtime() {
+		return ntime;
+	}
 
-    public ArrayList<String> getNewsContent() {
-        return newsContent;
-    }
+	public void setNtime(String ntime) {
+		this.ntime = ntime;
+	}
 
-    public void setMuseumName(String museumName) {
-        this.museumName = museumName;
-    }
+	public String getPublisher() {
+		return publisher;
+	}
 
-    public void setEvaluation(String evaluation) {
-        this.evaluation = evaluation;
-    }
-
-    public void setSource(String source) {
-        this.source = source;
-    }
-
-    public void setNewsId(int newsId) {
-        this.newsId = newsId;
-    }
-
-    public void setNewsTitle(String newsTitle) {
-        this.newsTitle = newsTitle;
-    }
-
-    public void setNewsContent(ArrayList<String> newsContent) {
-        this.newsContent = newsContent;
-    }
+	public void setPublisher(String publisher) {
+		this.publisher = publisher;
+	}
+	
+	
 }
