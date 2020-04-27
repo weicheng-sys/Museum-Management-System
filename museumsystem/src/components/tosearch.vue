@@ -1,4 +1,4 @@
-<template>
+template>
   <div>
 
     <van-row class="bgset" style="width:100%;height:50px;" >

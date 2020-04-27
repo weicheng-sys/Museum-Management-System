@@ -12,6 +12,14 @@
     </li>
 
   </van-list>
+  <van-panel >
+  <van-row>
+    <br>
+    <br>
+  </van-row>
+</van-panel>
+
+
 </div>
 </template>
 
@@ -35,7 +43,18 @@
               "【中国】良渚博物院：4月11日，良渚博物院将开展“‘钺’下良语”主题云直播。钺，由斧演变而来，象征权力与威严。良渚文化中的组合式玉钺，是王的权杖，体现了王权神授。反山十二号墓出土的玉钺，是迄今为止唯一雕琢有神人兽面纹和鸟纹的玉钺，堪称“钺王”。在本次直播中，良渚博物院讲解员单晴娟将为观众讲述良渚玉钺的精彩故事。"]
           }
       },
+     /* created(){
+        this.setdata()
+      },
+*/
       methods:{
+        /*setdata:function () {
+          var _self=this;
+          this.$http.get("/static/news_info.json").then((response) => {
+            _self.list=response.data
+
+          })
+        },*/
         onLoad() {
           // 异步更新数据
           // setTimeout 仅做示例，真实场景中一般为 ajax 请求

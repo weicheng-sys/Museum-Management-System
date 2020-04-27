@@ -7,18 +7,19 @@
       <van-col span="20" >
         <form action="/">
           <van-search
-            v-on:click="tosearch"
+
             v-model="value"
             show-action
             placeholder="请输入搜索关键词"
             @search="onSearch"
-            @cancel="onCancel"
             style="height: 50px"
           />
         </form>
       </van-col>
-
     </van-row>
+
+
+
     <!--轮播图-->
     <van-swipe :autoplay="2500" style="weight: 100% ;height:200px">
       <van-swipe-item><img :src="imgs[0].url" v-on:click="tohop" style="weight: 100% ; height: 150px"><br></van-swipe-item>
@@ -67,6 +68,7 @@
       components: {Vidio, RankingList, Newview},
       data(){
           return{
+            list: [],
             value:'',
             active2: '新闻',
             active: 'home',
@@ -83,8 +85,6 @@
           };
         },
       methods: {
-        onSearch(val) {
-        },
         onCancel() {
 
         },
@@ -105,12 +105,23 @@
             }
           }, 1000);
         },
-        tosearch: function () {
-          this.$router.push('/tosearch')
-        },
         tohop(){
-      this.$router.push('/tohoprank')
-    },
+       this.$router.push('/tohoprank')
+       },
+        onSearch(val) {
+          var t = this
+          this.axios.get('https://v1.alapi.cn/api/new/toutiao?start=1&num=100').then((res)=>{
+            t.list=res.data.data
+
+            this.$router.push({name:'Search1',
+              params:{
+                keyword: this.value,
+                list:this.list
+              }})
+          })
+
+
+        },
 
       }
     }

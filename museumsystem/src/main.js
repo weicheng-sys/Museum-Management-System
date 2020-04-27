@@ -15,7 +15,13 @@ import { NavBar } from 'vant';
 import { Tabbar, TabbarItem } from 'vant';
 import { Tab, Tabs } from 'vant';
 import { Panel } from 'vant';
-
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+import { Sticky } from 'vant';
+Vue.use(Sticky);
+/*import VueResource from 'vue-resource'
+Vue.use(VueResource)*/
+Vue.use(VueAxios, axios)
 Vue.use(Panel);
 Vue.use(Tab);
 Vue.use(Tabs);
