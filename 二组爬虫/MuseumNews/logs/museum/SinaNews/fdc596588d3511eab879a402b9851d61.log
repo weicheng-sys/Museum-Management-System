@@ -1,0 +1,1505 @@
+2020-05-03 20:02:52 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1660669985631885859&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=0&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:03:01 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1664814020316810947&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=0&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:03:14 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1646445504169831832&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E4%B8%AD%E5%9B%BD%E4%BA%BA%E6%B0%91%E9%9D%A9%E5%91%BD%E5%86%9B%E4%BA%8B%E5%8D%9A%E7%89%A9%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=0&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:03:16 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1661825991423018838&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E5%8C%97%E4%BA%AC%E9%B2%81%E8%BF%85%E5%8D%9A%E7%89%A9%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=20&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:03:19 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1659745055295562128&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E4%B8%AD%E5%9B%BD%E8%88%AA%E7%A9%BA%E5%8D%9A%E7%89%A9%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=30&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:03:20 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1662579976301853593&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E4%B8%AD%E5%9B%BD%E8%88%AA%E7%A9%BA%E5%8D%9A%E7%89%A9%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=30&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:03:20 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1662678706399594890&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E4%B8%AD%E5%9B%BD%E8%88%AA%E7%A9%BA%E5%8D%9A%E7%89%A9%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=30&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:03:23 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1632875801307913435&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E5%8C%97%E4%BA%AC%E9%B2%81%E8%BF%85%E5%8D%9A%E7%89%A9%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=60&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:03:25 [scrapy.core.scraper] ERROR: Spider error processing <GET http://news.sina.com.cn/o/2019-04-24/doc-ihvhiqax4713002.shtml> (referer: None)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 46, in parse_item
+    i["publisher"] = response.xpath('//div[@class="date-source"]/a/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:03:34 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1607589996907921872&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E4%B8%AD%E5%9B%BD%E4%BA%BA%E6%B0%91%E6%8A%97%E6%97%A5%E6%88%98%E4%BA%89%E7%BA%AA%E5%BF%B5%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=10&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:03:37 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1665397624562041812&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E5%8C%97%E4%BA%AC%E5%A4%A9%E6%96%87%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=0&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:03:52 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1643352407446775915&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E5%91%A8%E5%8F%A3%E5%BA%97%E7%8C%BF%E4%BA%BA%E9%81%97%E5%9D%80%E5%8D%9A%E7%89%A9%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=70&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:03:53 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1649981295523713143&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E5%91%A8%E5%8F%A3%E5%BA%97%E7%8C%BF%E4%BA%BA%E9%81%97%E5%9D%80%E5%8D%9A%E7%89%A9%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=30&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:03:55 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1637783458667533753&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E5%91%A8%E5%8F%A3%E5%BA%97%E7%8C%BF%E4%BA%BA%E9%81%97%E5%9D%80%E5%8D%9A%E7%89%A9%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=0&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:03:55 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1602792742375722903&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E5%91%A8%E5%8F%A3%E5%BA%97%E7%8C%BF%E4%BA%BA%E9%81%97%E5%9D%80%E5%8D%9A%E7%89%A9%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=10&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:03:55 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1615659260863189432&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E5%91%A8%E5%8F%A3%E5%BA%97%E7%8C%BF%E4%BA%BA%E9%81%97%E5%9D%80%E5%8D%9A%E7%89%A9%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=0&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:03:56 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1655973041559870766&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E5%91%A8%E5%8F%A3%E5%BA%97%E7%8C%BF%E4%BA%BA%E9%81%97%E5%9D%80%E5%8D%9A%E7%89%A9%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=0&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:03:57 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1591517327525003659&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E6%96%87%E5%8C%96%E9%83%A8%E6%81%AD%E7%8E%8B%E5%BA%9C%E5%8D%9A%E7%89%A9%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=10&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:03:58 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1602208520585133807&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E6%96%87%E5%8C%96%E9%83%A8%E6%81%AD%E7%8E%8B%E5%BA%9C%E5%8D%9A%E7%89%A9%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=10&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:03:58 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1607147031275401188&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E6%96%87%E5%8C%96%E9%83%A8%E6%81%AD%E7%8E%8B%E5%BA%9C%E5%8D%9A%E7%89%A9%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=20&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:03:58 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1634294214332011046&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E6%96%87%E5%8C%96%E9%83%A8%E6%81%AD%E7%8E%8B%E5%BA%9C%E5%8D%9A%E7%89%A9%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=10&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:04:03 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1609511602333308136&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E6%96%87%E5%8C%96%E9%83%A8%E6%81%AD%E7%8E%8B%E5%BA%9C%E5%8D%9A%E7%89%A9%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=30&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:04:07 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1601343704120935704&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E5%A4%A9%E6%B4%A5%E8%87%AA%E7%84%B6%E5%8D%9A%E7%89%A9%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=30&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:04:07 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1623255313560034083&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E5%A4%A9%E6%B4%A5%E8%87%AA%E7%84%B6%E5%8D%9A%E7%89%A9%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=30&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:04:08 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ent.enorth.com.cn/system/2018/06/26/035738814.shtml> (referer: None)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:04:08 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1619423915379983123&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E5%A4%A9%E6%B4%A5%E8%87%AA%E7%84%B6%E5%8D%9A%E7%89%A9%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=30&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:04:08 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1619071732136509751&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E5%A4%A9%E6%B4%A5%E8%87%AA%E7%84%B6%E5%8D%9A%E7%89%A9%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=30&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:04:08 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ent.enorth.com.cn/system/2019/01/30/036802107.shtml> (referer: None)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:04:08 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ent.enorth.com.cn/system/2019/05/18/037245191.shtml> (referer: None)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:04:08 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1634666326284507986&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E5%A4%A9%E6%B4%A5%E8%87%AA%E7%84%B6%E5%8D%9A%E7%89%A9%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=30&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:04:08 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.tj.xinhuanet.com/jz/2019-07/30/c_1124816867.htm> (referer: None)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:04:12 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ent.enorth.com.cn/system/2017/01/23/031518814.shtml> (referer: None)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:04:12 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1597982577696398620&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E5%A4%A9%E6%B4%A5%E8%87%AA%E7%84%B6%E5%8D%9A%E7%89%A9%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=40&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:04:12 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1597983554549200329&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E5%A4%A9%E6%B4%A5%E8%87%AA%E7%84%B6%E5%8D%9A%E7%89%A9%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=40&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:04:13 [scrapy.core.scraper] ERROR: Spider error processing <GET http://ent.enorth.com.cn/system/2019/09/24/037683677.shtml> (referer: None)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:04:13 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1653860999448316986&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E5%A4%A9%E6%B4%A5%E8%87%AA%E7%84%B6%E5%8D%9A%E7%89%A9%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=20&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:04:13 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1596189376437218128&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E5%A4%A9%E6%B4%A5%E8%87%AA%E7%84%B6%E5%8D%9A%E7%89%A9%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=50&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:04:13 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1661985742471684412&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E5%A4%A9%E6%B4%A5%E8%87%AA%E7%84%B6%E5%8D%9A%E7%89%A9%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=0&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:04:13 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.tj.xinhuanet.com/news/2020-03/28/c_1125780876.htm> (referer: None)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:04:13 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1658671609311008955&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E5%A4%A9%E6%B4%A5%E8%87%AA%E7%84%B6%E5%8D%9A%E7%89%A9%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=0&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:04:16 [scrapy.core.scraper] ERROR: Spider error processing <GET http://picture.youth.cn/qtdb/201901/t20190113_11842394_3.htm> (referer: None)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:04:16 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1600792708276514016&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E6%B2%B3%E5%8C%97%E5%8D%9A%E7%89%A9%E9%99%A2%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=30&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:04:16 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1620428648520119753&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E6%B2%B3%E5%8C%97%E5%8D%9A%E7%89%A9%E9%99%A2%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=30&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:04:20 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1622957596563440819&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E6%B2%B3%E5%8C%97%E5%8D%9A%E7%89%A9%E9%99%A2%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=20&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:04:20 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1647078561175504605&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E6%B2%B3%E5%8C%97%E5%8D%9A%E7%89%A9%E9%99%A2%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=20&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:04:20 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1651237318840987188&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E6%B2%B3%E5%8C%97%E5%8D%9A%E7%89%A9%E9%99%A2%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=20&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:04:20 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1656563542371702175&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E6%B2%B3%E5%8C%97%E5%8D%9A%E7%89%A9%E9%99%A2%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=10&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:04:20 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1655215528907262061&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E6%B2%B3%E5%8C%97%E5%8D%9A%E7%89%A9%E9%99%A2%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=10&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:04:23 [scrapy.core.scraper] ERROR: Spider error processing <GET http://news.sina.com.cn/c/2020-02-07/doc-iimxyqvz0952481.shtml> (referer: None)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 46, in parse_item
+    i["publisher"] = response.xpath('//div[@class="date-source"]/a/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:04:23 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1654971449135688429&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E9%82%AF%E9%83%B8%E5%B8%82%E5%8D%9A%E7%89%A9%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=10&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:04:24 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1631051774770857712&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E9%82%AF%E9%83%B8%E5%B8%82%E5%8D%9A%E7%89%A9%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=40&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:04:24 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1596720498718303561&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E9%82%AF%E9%83%B8%E5%B8%82%E5%8D%9A%E7%89%A9%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=60&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:04:28 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1632927537347360284&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E9%82%AF%E9%83%B8%E5%B8%82%E5%8D%9A%E7%89%A9%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=30&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:04:30 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1644976210193029714&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E9%82%AF%E9%83%B8%E5%B8%82%E5%8D%9A%E7%89%A9%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=30&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:04:30 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1645062218419508213&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E9%82%AF%E9%83%B8%E5%B8%82%E5%8D%9A%E7%89%A9%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=30&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:04:32 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1620579128848616561&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E8%A5%BF%E6%9F%8F%E5%9D%A1%E7%BA%AA%E5%BF%B5%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=30&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:04:38 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.ce.cn/culture/gd/201702/17/t20170217_20300125.shtml> (referer: None)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:04:42 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1641194804634701465&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E5%85%AB%E8%B7%AF%E5%86%9B%E5%A4%AA%E8%A1%8C%E7%BA%AA%E5%BF%B5%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=30&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:04:43 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1615917015848485396&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E5%85%AB%E8%B7%AF%E5%86%9B%E5%A4%AA%E8%A1%8C%E7%BA%AA%E5%BF%B5%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=40&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:04:45 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1650686255864328688&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E4%B8%AD%E5%9B%BD%E7%85%A4%E7%82%AD%E5%8D%9A%E7%89%A9%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=10&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:04:45 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1659747461899113816&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E4%B8%AD%E5%9B%BD%E7%85%A4%E7%82%AD%E5%8D%9A%E7%89%A9%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=10&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:04:46 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1653669242662660206&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E4%B8%AD%E5%9B%BD%E7%85%A4%E7%82%AD%E5%8D%9A%E7%89%A9%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=10&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:04:50 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1600844854278845442&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E4%B8%AD%E5%9B%BD%E7%85%A4%E7%82%AD%E5%8D%9A%E7%89%A9%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=20&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:04:50 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1583901071176637027&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E4%B8%AD%E5%9B%BD%E7%85%A4%E7%82%AD%E5%8D%9A%E7%89%A9%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=20&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:04:50 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1604849460020335762&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E4%B8%AD%E5%9B%BD%E7%85%A4%E7%82%AD%E5%8D%9A%E7%89%A9%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=20&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:04:50 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1596375372343668463&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E4%B8%AD%E5%9B%BD%E7%85%A4%E7%82%AD%E5%8D%9A%E7%89%A9%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=20&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:04:51 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1622524971269986275&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E4%B8%AD%E5%9B%BD%E7%85%A4%E7%82%AD%E5%8D%9A%E7%89%A9%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=20&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:04:52 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1660187896420091232&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E9%84%82%E5%B0%94%E5%A4%9A%E6%96%AF%E5%8D%9A%E7%89%A9%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=0&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:04:55 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1650864204706793522&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E9%84%82%E5%B0%94%E5%A4%9A%E6%96%AF%E5%8D%9A%E7%89%A9%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=30&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:05:05 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1660929816434962613&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E8%BE%BD%E5%AE%81%E7%9C%81%E5%8D%9A%E7%89%A9%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=30&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:05:17 [scrapy.core.scraper] ERROR: Error downloading <GET http://www.yq.gov.cn/ywdt/jryq/201807/t20180730_745234.shtml>
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\core\downloader\middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+twisted.internet.error.TCPTimedOutError: TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2020-05-03 20:05:18 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1658683353908201145&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E6%B2%88%E9%98%B3%E6%95%85%E5%AE%AB%E5%8D%9A%E7%89%A9%E9%99%A2%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=20&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:05:18 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1598885748501326389&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E6%B2%88%E9%98%B3%E6%95%85%E5%AE%AB%E5%8D%9A%E7%89%A9%E9%99%A2%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=20&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:05:21 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1578325731687601864&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E5%90%89%E6%9E%97%E7%9C%81%E8%87%AA%E7%84%B6%E5%8D%9A%E7%89%A9%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=0&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:05:24 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1586905904283678438&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E6%B2%88%E9%98%B3%E6%95%85%E5%AE%AB%E5%8D%9A%E7%89%A9%E9%99%A2%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=30&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:05:30 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1635491473677455452&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E4%BC%AA%E6%BB%A1%E7%9A%87%E5%AE%AB%E5%8D%9A%E7%89%A9%E9%99%A2%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=50&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:05:30 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1625858699878282336&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E4%BC%AA%E6%BB%A1%E7%9A%87%E5%AE%AB%E5%8D%9A%E7%89%A9%E9%99%A2%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=60&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:05:30 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1633876753015379998&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E4%BC%AA%E6%BB%A1%E7%9A%87%E5%AE%AB%E5%8D%9A%E7%89%A9%E9%99%A2%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=60&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:05:31 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1632661615619482274&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E4%BC%AA%E6%BB%A1%E7%9A%87%E5%AE%AB%E5%8D%9A%E7%89%A9%E9%99%A2%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=60&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:05:31 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1600550559738093827&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E4%BC%AA%E6%BB%A1%E7%9A%87%E5%AE%AB%E5%8D%9A%E7%89%A9%E9%99%A2%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=80&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:05:31 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1601874971454577606&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E4%BC%AA%E6%BB%A1%E7%9A%87%E5%AE%AB%E5%8D%9A%E7%89%A9%E9%99%A2%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=80&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:05:32 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1598247105042750073&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E4%BC%AA%E6%BB%A1%E7%9A%87%E5%AE%AB%E5%8D%9A%E7%89%A9%E9%99%A2%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=80&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:05:32 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1598904443976674623&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E4%BC%AA%E6%BB%A1%E7%9A%87%E5%AE%AB%E5%8D%9A%E7%89%A9%E9%99%A2%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=80&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:05:32 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1602685579785022532&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E4%BC%AA%E6%BB%A1%E7%9A%87%E5%AE%AB%E5%8D%9A%E7%89%A9%E9%99%A2%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=80&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:05:32 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1610656115021119294&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E4%BC%AA%E6%BB%A1%E7%9A%87%E5%AE%AB%E5%8D%9A%E7%89%A9%E9%99%A2%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=70&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:05:32 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1612760569920065234&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E4%BC%AA%E6%BB%A1%E7%9A%87%E5%AE%AB%E5%8D%9A%E7%89%A9%E9%99%A2%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=70&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:05:32 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1622003708922616102&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E4%BC%AA%E6%BB%A1%E7%9A%87%E5%AE%AB%E5%8D%9A%E7%89%A9%E9%99%A2%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=70&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:05:32 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.ce.cn/culture/gd/201805/08/t20180508_29064307.shtml> (referer: None)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:05:32 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1657350877219595005&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E4%BC%AA%E6%BB%A1%E7%9A%87%E5%AE%AB%E5%8D%9A%E7%89%A9%E9%99%A2%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=50&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:05:32 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1647909511047944955&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E4%BC%AA%E6%BB%A1%E7%9A%87%E5%AE%AB%E5%8D%9A%E7%89%A9%E9%99%A2%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=50&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:05:32 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1609492528545639981&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E4%BC%AA%E6%BB%A1%E7%9A%87%E5%AE%AB%E5%8D%9A%E7%89%A9%E9%99%A2%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=70&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:05:32 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1602688336870713947&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E4%BC%AA%E6%BB%A1%E7%9A%87%E5%AE%AB%E5%8D%9A%E7%89%A9%E9%99%A2%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=70&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:05:33 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1657133494023053901&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E4%BC%AA%E6%BB%A1%E7%9A%87%E5%AE%AB%E5%8D%9A%E7%89%A9%E9%99%A2%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=50&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:05:36 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1645353666572470189&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E9%93%81%E4%BA%BA%E7%8E%8B%E8%BF%9B%E5%96%9C%E7%BA%AA%E5%BF%B5%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=0&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:05:37 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1664482753779900763&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E9%93%81%E4%BA%BA%E7%8E%8B%E8%BF%9B%E5%96%9C%E7%BA%AA%E5%BF%B5%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=70&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:05:38 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1607110381508881926&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E9%93%81%E4%BA%BA%E7%8E%8B%E8%BF%9B%E5%96%9C%E7%BA%AA%E5%BF%B5%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=10&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:05:38 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1612720312797518621&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E9%93%81%E4%BA%BA%E7%8E%8B%E8%BF%9B%E5%96%9C%E7%BA%AA%E5%BF%B5%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=10&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:05:43 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1633730610851726386&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E4%B8%9C%E5%8C%97%E7%83%88%E5%A3%AB%E7%BA%AA%E5%BF%B5%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=20&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:05:45 [scrapy.core.scraper] ERROR: Spider error processing <GET http://news.sina.com.cn/c/2018-04-17/doc-ifyuwqfa2616174.shtml> (referer: None)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 46, in parse_item
+    i["publisher"] = response.xpath('//div[@class="date-source"]/a/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:05:52 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1652622495213678268&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E5%A4%A7%E5%BA%86%E5%8D%9A%E7%89%A9%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=0&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range
+2020-05-03 20:05:59 [scrapy.core.scraper] ERROR: Spider error processing <GET https://baijiahao.baidu.com/s?id=1608210837456809594&wfr=spider&for=pc> (referer: https://www.baidu.com/s?ie=utf-8&cl=2&medium=0&rtt=1&bsst=1&rsv_dl=news_t_sk&tn=news&word=%22%E7%88%B1%E8%BE%89%E5%8E%86%E5%8F%B2%E9%99%88%E5%88%97%E9%A6%86%22%2B%22%E6%96%B0%E6%B5%AA%E6%96%B0%E9%97%BB%22&pn=0&rsv_sug3=7&rsv_sug4=514&inputT=2377)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\sinaNews.py", line 41, in parse_item
+    i["newsTitle"] = response.xpath('//h1[@class="main-title"]/text()').extract()[0]
+IndexError: list index out of range

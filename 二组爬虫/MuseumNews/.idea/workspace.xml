@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="78cd5bce-3b3b-446c-a916-e8b7294fe0c6" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1b1Q0n6W1tlehAuNCrGzCkIQuOI" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Python\web_crawler\MuseumNews" />
+      <recent name="D:\Python\web_crawler\MuseumNews\museumNews\spiders" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.StartCrawl">
+    <configuration name="DateTime" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MuseumNews" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TestDate" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TestDate/DateTime.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="StartCrawl" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MuseumNews" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\Python\py\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/StartCrawl.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.StartCrawl" />
+        <item itemvalue="Python.DateTime" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="78cd5bce-3b3b-446c-a916-e8b7294fe0c6" name="Default Changelist" comment="" />
+      <created>1587796898817</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1587796898817</updated>
+      <workItem from="1587796900497" duration="16000" />
+      <workItem from="1587799089814" duration="92000" />
+      <workItem from="1587806615545" duration="2280000" />
+      <workItem from="1587877248609" duration="80000" />
+      <workItem from="1587877970317" duration="10925000" />
+      <workItem from="1587889402138" duration="1607000" />
+      <workItem from="1587991966936" duration="245000" />
+      <workItem from="1587992228163" duration="2261000" />
+      <workItem from="1587997223931" duration="5379000" />
+      <workItem from="1588504765533" duration="2581000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="219" y="80" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587879448818">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="219" y="80" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1587879448818" />
+    <state x="496" y="130" key="FileChooserDialogImpl" timestamp="1587893731985">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="496" y="130" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1587893731985" />
+    <state width="1487" height="673" key="GridCell.Tab.0.bottom" timestamp="1588505239186">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1487" height="673" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1588505239186" />
+    <state width="1487" height="673" key="GridCell.Tab.0.center" timestamp="1588505239186">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1487" height="673" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1588505239186" />
+    <state width="1487" height="673" key="GridCell.Tab.0.left" timestamp="1588505239186">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1487" height="673" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1588505239186" />
+    <state width="1487" height="673" key="GridCell.Tab.0.right" timestamp="1588505239186">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1487" height="673" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1588505239186" />
+    <state x="190" y="0" key="SettingsEditor" timestamp="1587879492177">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="190" y="0" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1587879492177" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/MuseumNews$DateTime.coverage" NAME="DateTime Coverage Results" MODIFIED="1587886267250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestDate" />
+    <SUITE FILE_PATH="coverage/MuseumNews$StartCrawl.coverage" NAME="StartCrawl Coverage Results" MODIFIED="1588505156007" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>

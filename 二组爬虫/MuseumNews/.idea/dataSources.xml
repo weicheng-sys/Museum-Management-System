@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="museumNews" uuid="36b7ec03-a4c2-4438-b2c0-051e4360ceeb">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:D:\Python\web_crawler\MuseumNews\museumNews\spiders\dbs\museumNews.db</jdbc-url>
+    </data-source>
+  </component>
+</project>

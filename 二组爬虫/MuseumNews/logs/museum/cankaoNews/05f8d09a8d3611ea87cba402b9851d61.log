@@ -1,0 +1,660 @@
+2020-05-03 20:03:21 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.cankaoxiaoxi.com/18mib/mil/20181117/2354922.shtml> (referer: None)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\cankaoNews.py", line 49, in parse_item
+    i["publishTime"] = response.xpath("//*[@id='pubtime_baidu']//text()").getall()[0]
+IndexError: list index out of range
+2020-05-03 20:03:26 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.cankaoxiaoxi.com/18mib/mil/20180711/2290910.shtml> (referer: None)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\cankaoNews.py", line 49, in parse_item
+    i["publishTime"] = response.xpath("//*[@id='pubtime_baidu']//text()").getall()[0]
+IndexError: list index out of range
+2020-05-03 20:03:33 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.cankaoxiaoxi.com/society/20180815/2311350.shtml> (referer: None)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\cankaoNews.py", line 49, in parse_item
+    i["publishTime"] = response.xpath("//*[@id='pubtime_baidu']//text()").getall()[0]
+IndexError: list index out of range
+2020-05-03 20:03:36 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.cankaoxiaoxi.com/society/20180516/2270826.shtml> (referer: None)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\cankaoNews.py", line 49, in parse_item
+    i["publishTime"] = response.xpath("//*[@id='pubtime_baidu']//text()").getall()[0]
+IndexError: list index out of range
+2020-05-03 20:03:37 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.cankaoxiaoxi.com/society/20180814/2310608.shtml> (referer: None)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\cankaoNews.py", line 49, in parse_item
+    i["publishTime"] = response.xpath("//*[@id='pubtime_baidu']//text()").getall()[0]
+IndexError: list index out of range
+2020-05-03 20:03:37 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.cankaoxiaoxi.com/society/20180906/2322246.shtml> (referer: None)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\cankaoNews.py", line 49, in parse_item
+    i["publishTime"] = response.xpath("//*[@id='pubtime_baidu']//text()").getall()[0]
+IndexError: list index out of range
+2020-05-03 20:03:49 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.cankaoxiaoxi.com/society/20180522/2272650.shtml> (referer: None)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\cankaoNews.py", line 49, in parse_item
+    i["publishTime"] = response.xpath("//*[@id='pubtime_baidu']//text()").getall()[0]
+IndexError: list index out of range
+2020-05-03 20:03:49 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.cankaoxiaoxi.com/society/20180830/2318650.shtml> (referer: None)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\cankaoNews.py", line 49, in parse_item
+    i["publishTime"] = response.xpath("//*[@id='pubtime_baidu']//text()").getall()[0]
+IndexError: list index out of range
+2020-05-03 20:03:52 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.cankaoxiaoxi.com/society/20180517/2271254.shtml> (referer: None)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\cankaoNews.py", line 49, in parse_item
+    i["publishTime"] = response.xpath("//*[@id='pubtime_baidu']//text()").getall()[0]
+IndexError: list index out of range
+2020-05-03 20:03:55 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.cankaoxiaoxi.com/society/20180518/2271648.shtml> (referer: None)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\cankaoNews.py", line 49, in parse_item
+    i["publishTime"] = response.xpath("//*[@id='pubtime_baidu']//text()").getall()[0]
+IndexError: list index out of range
+2020-05-03 20:03:57 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.cankaoxiaoxi.com/society/20180518/2271563.shtml> (referer: None)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\cankaoNews.py", line 49, in parse_item
+    i["publishTime"] = response.xpath("//*[@id='pubtime_baidu']//text()").getall()[0]
+IndexError: list index out of range
+2020-05-03 20:03:57 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.cankaoxiaoxi.com/society/20181130/2360895.shtml> (referer: None)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\cankaoNews.py", line 49, in parse_item
+    i["publishTime"] = response.xpath("//*[@id='pubtime_baidu']//text()").getall()[0]
+IndexError: list index out of range
+2020-05-03 20:03:58 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.cankaoxiaoxi.com/society/20180518/2271576.shtml> (referer: None)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\cankaoNews.py", line 49, in parse_item
+    i["publishTime"] = response.xpath("//*[@id='pubtime_baidu']//text()").getall()[0]
+IndexError: list index out of range
+2020-05-03 20:03:58 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.cankaoxiaoxi.com/society/20180604/2277072.shtml> (referer: None)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\cankaoNews.py", line 49, in parse_item
+    i["publishTime"] = response.xpath("//*[@id='pubtime_baidu']//text()").getall()[0]
+IndexError: list index out of range
+2020-05-03 20:03:59 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.cankaoxiaoxi.com/society/20180522/2272620.shtml> (referer: None)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\cankaoNews.py", line 49, in parse_item
+    i["publishTime"] = response.xpath("//*[@id='pubtime_baidu']//text()").getall()[0]
+IndexError: list index out of range
+2020-05-03 20:04:00 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.cankaoxiaoxi.com/society/20180521/2272329.shtml> (referer: None)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\cankaoNews.py", line 49, in parse_item
+    i["publishTime"] = response.xpath("//*[@id='pubtime_baidu']//text()").getall()[0]
+IndexError: list index out of range
+2020-05-03 20:04:10 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.cankaoxiaoxi.com/society/20181030/2346091.shtml> (referer: None)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\cankaoNews.py", line 49, in parse_item
+    i["publishTime"] = response.xpath("//*[@id='pubtime_baidu']//text()").getall()[0]
+IndexError: list index out of range
+2020-05-03 20:04:12 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.cankaoxiaoxi.com/society/20180425/2264051.shtml> (referer: None)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\cankaoNews.py", line 49, in parse_item
+    i["publishTime"] = response.xpath("//*[@id='pubtime_baidu']//text()").getall()[0]
+IndexError: list index out of range
+2020-05-03 20:04:16 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.cankaoxiaoxi.com/society/20180518/2271620.shtml> (referer: None)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\cankaoNews.py", line 49, in parse_item
+    i["publishTime"] = response.xpath("//*[@id='pubtime_baidu']//text()").getall()[0]
+IndexError: list index out of range
+2020-05-03 20:04:16 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.cankaoxiaoxi.com/society/20180925/2331547.shtml> (referer: None)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\cankaoNews.py", line 49, in parse_item
+    i["publishTime"] = response.xpath("//*[@id='pubtime_baidu']//text()").getall()[0]
+IndexError: list index out of range
+2020-05-03 20:04:16 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.cankaoxiaoxi.com/society/20181009/2336458.shtml> (referer: None)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\cankaoNews.py", line 49, in parse_item
+    i["publishTime"] = response.xpath("//*[@id='pubtime_baidu']//text()").getall()[0]
+IndexError: list index out of range
+2020-05-03 20:04:16 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.cankaoxiaoxi.com/society/20181017/2340696.shtml> (referer: None)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\cankaoNews.py", line 49, in parse_item
+    i["publishTime"] = response.xpath("//*[@id='pubtime_baidu']//text()").getall()[0]
+IndexError: list index out of range
+2020-05-03 20:04:16 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.cankaoxiaoxi.com/society/20181023/2343039.shtml> (referer: None)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\cankaoNews.py", line 49, in parse_item
+    i["publishTime"] = response.xpath("//*[@id='pubtime_baidu']//text()").getall()[0]
+IndexError: list index out of range
+2020-05-03 20:04:33 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.cankaoxiaoxi.com/society/20180514/2269945.shtml> (referer: None)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\cankaoNews.py", line 49, in parse_item
+    i["publishTime"] = response.xpath("//*[@id='pubtime_baidu']//text()").getall()[0]
+IndexError: list index out of range
+2020-05-03 20:04:48 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.cankaoxiaoxi.com/society/20180511/2268958.shtml> (referer: None)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\cankaoNews.py", line 49, in parse_item
+    i["publishTime"] = response.xpath("//*[@id='pubtime_baidu']//text()").getall()[0]
+IndexError: list index out of range
+2020-05-03 20:04:49 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.cankaoxiaoxi.com/society/20180814/2310456.shtml> (referer: None)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\cankaoNews.py", line 49, in parse_item
+    i["publishTime"] = response.xpath("//*[@id='pubtime_baidu']//text()").getall()[0]
+IndexError: list index out of range
+2020-05-03 20:04:49 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.cankaoxiaoxi.com/society/20180815/2311134.shtml> (referer: None)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\cankaoNews.py", line 49, in parse_item
+    i["publishTime"] = response.xpath("//*[@id='pubtime_baidu']//text()").getall()[0]
+IndexError: list index out of range
+2020-05-03 20:04:53 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.cankaoxiaoxi.com/society/20180518/2271616.shtml> (referer: None)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\cankaoNews.py", line 49, in parse_item
+    i["publishTime"] = response.xpath("//*[@id='pubtime_baidu']//text()").getall()[0]
+IndexError: list index out of range
+2020-05-03 20:05:18 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.cankaoxiaoxi.com/society/20181126/2358749.shtml> (referer: None)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\cankaoNews.py", line 49, in parse_item
+    i["publishTime"] = response.xpath("//*[@id='pubtime_baidu']//text()").getall()[0]
+IndexError: list index out of range
+2020-05-03 20:05:18 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.cankaoxiaoxi.com/society/20180524/2273581.shtml> (referer: None)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\cankaoNews.py", line 49, in parse_item
+    i["publishTime"] = response.xpath("//*[@id='pubtime_baidu']//text()").getall()[0]
+IndexError: list index out of range
+2020-05-03 20:05:18 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.cankaoxiaoxi.com/society/20180509/2267756.shtml> (referer: None)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\cankaoNews.py", line 49, in parse_item
+    i["publishTime"] = response.xpath("//*[@id='pubtime_baidu']//text()").getall()[0]
+IndexError: list index out of range
+2020-05-03 20:05:19 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.cankaoxiaoxi.com/society/20181106/2349378.shtml> (referer: None)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\cankaoNews.py", line 49, in parse_item
+    i["publishTime"] = response.xpath("//*[@id='pubtime_baidu']//text()").getall()[0]
+IndexError: list index out of range
+2020-05-03 20:05:19 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.cankaoxiaoxi.com/society/20180527/2274495.shtml> (referer: None)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\cankaoNews.py", line 49, in parse_item
+    i["publishTime"] = response.xpath("//*[@id='pubtime_baidu']//text()").getall()[0]
+IndexError: list index out of range
+2020-05-03 20:05:19 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.cankaoxiaoxi.com/society/20180618/2281589.shtml> (referer: None)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\cankaoNews.py", line 49, in parse_item
+    i["publishTime"] = response.xpath("//*[@id='pubtime_baidu']//text()").getall()[0]
+IndexError: list index out of range
+2020-05-03 20:05:19 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.cankaoxiaoxi.com/society/20180521/2272318.shtml> (referer: None)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\cankaoNews.py", line 49, in parse_item
+    i["publishTime"] = response.xpath("//*[@id='pubtime_baidu']//text()").getall()[0]
+IndexError: list index out of range
+2020-05-03 20:05:19 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.cankaoxiaoxi.com/society/20180529/2275294.shtml> (referer: None)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\cankaoNews.py", line 49, in parse_item
+    i["publishTime"] = response.xpath("//*[@id='pubtime_baidu']//text()").getall()[0]
+IndexError: list index out of range
+2020-05-03 20:05:19 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.cankaoxiaoxi.com/society/20180619/2282062.shtml> (referer: None)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\cankaoNews.py", line 49, in parse_item
+    i["publishTime"] = response.xpath("//*[@id='pubtime_baidu']//text()").getall()[0]
+IndexError: list index out of range
+2020-05-03 20:05:19 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.cankaoxiaoxi.com/society/20180706/2288927.shtml> (referer: None)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\cankaoNews.py", line 49, in parse_item
+    i["publishTime"] = response.xpath("//*[@id='pubtime_baidu']//text()").getall()[0]
+IndexError: list index out of range
+2020-05-03 20:05:19 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.cankaoxiaoxi.com/society/20180921/2330310.shtml> (referer: None)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\cankaoNews.py", line 49, in parse_item
+    i["publishTime"] = response.xpath("//*[@id='pubtime_baidu']//text()").getall()[0]
+IndexError: list index out of range
+2020-05-03 20:05:22 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.cankaoxiaoxi.com/society/20181030/2346186.shtml> (referer: None)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\cankaoNews.py", line 49, in parse_item
+    i["publishTime"] = response.xpath("//*[@id='pubtime_baidu']//text()").getall()[0]
+IndexError: list index out of range
+2020-05-03 20:05:46 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.cankaoxiaoxi.com/society/20180802/2303861.shtml> (referer: None)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\cankaoNews.py", line 49, in parse_item
+    i["publishTime"] = response.xpath("//*[@id='pubtime_baidu']//text()").getall()[0]
+IndexError: list index out of range
+2020-05-03 20:05:47 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.cankaoxiaoxi.com/society/20180507/2267142.shtml> (referer: None)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\cankaoNews.py", line 49, in parse_item
+    i["publishTime"] = response.xpath("//*[@id='pubtime_baidu']//text()").getall()[0]
+IndexError: list index out of range
+2020-05-03 20:05:48 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.cankaoxiaoxi.com/society/20181115/2353781.shtml> (referer: None)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\cankaoNews.py", line 49, in parse_item
+    i["publishTime"] = response.xpath("//*[@id='pubtime_baidu']//text()").getall()[0]
+IndexError: list index out of range
+2020-05-03 20:05:48 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.cankaoxiaoxi.com/society/20181206/2363223.shtml> (referer: None)
+Traceback (most recent call last):
+  File "d:\python\py\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\py\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python\web_crawler\MuseumNews\museumNews\spiders\cankaoNews.py", line 49, in parse_item
+    i["publishTime"] = response.xpath("//*[@id='pubtime_baidu']//text()").getall()[0]
+IndexError: list index out of range

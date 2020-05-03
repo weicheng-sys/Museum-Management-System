@@ -8,13 +8,26 @@
 import scrapy
 
 class MuseumnewsItem(scrapy.Item):
-    # define the fields for your item here like:
-    name = scrapy.Field()
-    museum_name = scrapy.Field()
+    # 博物馆名
+    museumName = scrapy.Field()
+
+    # #新闻好坏
+    evaluation = scrapy.Field()
+
+    # 发布源
     source = scrapy.Field()
-    title = scrapy.Field()
-    content = scrapy.Field()
-    date = scrapy.Field()
-    time = scrapy.Field()
+
+    # 新闻名称
+    newsTitle = scrapy.Field()
+
+    # 新闻内容
+    newsContent = scrapy.Field()
+
+    # 新闻图片
+    newsPicture = scrapy.Field()
+
+    # 发布时间
+    publishTime = scrapy.Field()
+
+    # 发布方
     publisher = scrapy.Field()
-    img = scrapy.Field()
