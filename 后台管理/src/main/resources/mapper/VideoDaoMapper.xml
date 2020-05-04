@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace:填写映射当前的Mapper接口，所有的增删改查的参数和返回值类型，
+		就可以直接填写缩写，不区分大小写，直接通过方法名去找类型-->
+<mapper namespace="com.software.dao.VideoDao">
+    <select id="findByvid" parameterType="int" resultType="Video">
+        select *
+        from video
+        where vid=#{vid}
+    </select>
+
+    <update id="update" parameterType="Video">
+        update video
+        set uid=#{uid},mid=#{mid},vname=#{vname},vaddr=#{vaddr},
+        vinfo=#{vinfo}
+        where vid=#{vid}
+    </update>
+
+    <delete id="delete" parameterType="int">
+        delete from video
+        where vid=#{vid}
+    </delete>
+
+    <select id="findAll_passed" resultType="Video">
+        select *
+        from video
+        where status=1
+    </select>
+
+    <select id="findByvname" parameterType="String" resultType="Video">
+        select *
+        from video
+        where status=1 and vname=#{vname}
+    </select>
+
+    <select id="findBymname" parameterType="String" resultType="Video">
+        select *
+        from video
+        where mid=
+          (
+            select mid
+            from museum
+            where mname=#{mname}
+          )
+          and status=1
+    </select>
+
+    <select id="findByuname" parameterType="String" resultType="Video">
+        select *
+        from video
+        where uid=
+          (
+            select uid
+            from user
+            where uname=#{uname}
+          )
+          and status=1
+    </select>
+
+    <select id="findAll_ready" resultType="Video">
+        select *
+        from video
+        where status=0
+    </select>
+
+    <update id="pass" parameterType="int">
+        update video
+        set status=1
+        where vid=#{vid}
+    </update>
+
+    <delete id="fail" parameterType="int">
+        delete from video
+        where vid=#{vid}
+    </delete>
+</mapper>

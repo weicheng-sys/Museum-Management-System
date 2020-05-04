@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.software.dao.MuseumDao">
+
+    <update id="update" parameterType="Museum">
+        update museum
+        set mname=#{mname},evaluate=#{evaluate},grade=#{grade},basic_info=#{basic_info},other_info=#{other_info}
+        where mid=#{mid}
+    </update>
+
+    <select id="findAll"  resultType="Museum">
+        select *
+        from museum
+    </select>
+
+    <select id="findById" parameterType="String" resultType="Museum">
+        select *
+        from museum
+        where mid=#{mid}
+    </select>
+
+    <select id="findByname" parameterType="String" resultType="Museum">
+        select *
+        from museum
+        where mname=#{mname}
+    </select>
+
+    <delete id="delete" parameterType="String">
+        delete from museum where mid=#{mid}
+    </delete>
+</mapper>

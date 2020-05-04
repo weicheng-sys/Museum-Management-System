@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace:填写映射当前的Mapper接口，所有的增删改查的参数和返回值类型，
+		就可以直接填写缩写，不区分大小写，直接通过方法名去找类型-->
+<mapper namespace="com.software.dao.NewsDao">
+
+    <!--nid    |    title    | content  |    nimg     |    ntime    |  publisher  |mname|evaluation|source|-->
+    <update id="update" parameterType="News">
+        update news
+        set nid=#{nid},title=#{title},content=#{content},ntime=#{ntime},publisher=#{publisher},mname=#{mname},
+        evaluation=#{evaluation},source=#{source}
+        where nid=#{nid}
+    </update>
+
+    <select id="findAll"  resultType="News">
+        select *
+        from news
+    </select>
+
+    <select id="findBymname" parameterType="News" resultType="News">
+        select *
+        from news
+        where mname=#{mname}
+    </select>
+
+    <select id="findById" parameterType="int" resultType="News">
+        select *
+        from news
+        where nid=#{nid}
+    </select>
+
+    <delete id="delete" parameterType="int">
+        delete from news where nid=#{nid}
+    </delete>
+
+</mapper>
