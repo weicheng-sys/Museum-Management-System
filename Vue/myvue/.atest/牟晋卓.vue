@@ -1,14 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>RegisterPage</title>
-  <link rel="stylesheet" href="../css/base/reset.css">
-  <link rel="stylesheet" href="../css/base/common.css">
-  <link rel="stylesheet" href="../css/authPro/auth.css">
-  <link rel="stylesheet" href="http://at.alicdn.com/t/font_684044_un7umbuwwfp.css">
-</head>
-<body>
+<template>
+    
+<div>
 <!-- header start -->
 <header id="header">
   <div class="mw1200 header-contain clearfix">
@@ -74,7 +66,7 @@
       <div class="form-item">
         <input type="text" placeholder="请输入图形验证码" id="input_captcha" name="captcha_graph" class="form-captcha">
         <a href="javascript:void(0);" class="captcha-graph-img">
-          <img src="../images/captcha.png" alt="验证码" title="点击刷新">
+          <img src="../../assets/images/captcha.png" alt="验证码" title="点击刷新">
         </a>
       </div>
       <div class="form-item">
@@ -100,6 +92,20 @@
     </p>
   </div>
 </footer>
-<!-- footer end -->
-</body>
-</html>
+</div>
+</template>
+
+<<script>
+
+export default {
+  name:"login"
+}
+</script>
+
+<style>
+@import  "../../assets/css/authPro/auth.css";
+@import  "../../assets/css/base/common.css";
+@import  "../../assets/css/base/reset.css";
+@import  "../../assets/css/base/side.css";
+@import  "../../assets/css/base/sweetalert.css";
+</style>

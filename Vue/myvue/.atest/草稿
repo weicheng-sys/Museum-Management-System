@@ -1,0 +1,42 @@
+   <nav>  
+　　<ul>
+　　　　<li v-for="(item, i) in navData" :class="{ nav_li : active === i }" :key="i" @click="$router.push({ path: item.path }), active = i">
+　　　　　　{{item.name}}
+　　　　</li>
+   </ul> 
+</nav>
+
+
+  个人信息：
+   
+  <ul class="a">
+  <li>头像</li>
+  <li>昵称</li>
+  <li>性别</li>
+</ul>
+ 
+<ul class="b">
+  <li>地区</li>
+  <li>账号</li>
+  <li>个性签名</li>
+</ul>
+
+
+ navData: [
+        { name: '1', path: './Mypage'},
+        { name: '2', path: '@/Homes/Home'  },
+    
+      ]
+
+
+
+      
+    <div class="upload">
+      <div v-if="columnName === '视频'">
+        <div class="forPreview_video" v-for="(item, index) in uploadVideoList" :key="index">
+          <video :src="videoSrc"></video>
+          <van-icon name="delete" @click="delBtn(index)" class="delte"/>
+        </div>
+        <van-uploader v-show="uploadVideoList.length < 2" preview-size="80px" accept="video/*" :before-read="beforeRead" :after-read="afterRead"></van-uploader>
+      </div>
+</div>

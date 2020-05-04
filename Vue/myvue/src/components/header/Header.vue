@@ -1,30 +1,21 @@
 <template>
-  <div id="header">
-   
-<div class="header">
-  <h1>头部区域---背景图片</h1>
-  <p>重置浏览器大小查看效果。</p>
-</div>
+  <div class="h">
+    <h1 style="padding: 0px margin: 0px">地图导览</h1>
   </div>
 </template>
 
 
 <script>
-
-
 export default {
-name:"header"
-
-}
+  name: "Header"
+};
 </script>
 
 <style>
-
-
-.header{
-
+.h {
   background-color: #f1f1f1;
-  padding: 20px;
+  /* padding: 0px;
+  margin: 0px; */
   text-align: center;
 }
 </style>

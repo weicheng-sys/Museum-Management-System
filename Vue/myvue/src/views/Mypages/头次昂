@@ -1,0 +1,162 @@
+<template>
+  <div id="app">
+
+  <van-nav-bar
+  title="标题"
+  left-text="个人信息"
+  right-text="按钮"
+  left-arrow
+  @click-left="onClickLeft"
+  @click-right="onClickRight"
+/>
+
+
+<li @change="changeImage($event)">
+        <van-uploader
+          multiple
+          :accept="'image/*'"
+          :preview-size="30"
+          :deletable="false"
+          :after-read="afterRead"
+        >
+          <span>头像</span>
+          <img :src="avatar" class="img-avatar" round />
+          <van-icon name="arrow" />
+        </van-uploader>
+      </li>
+
+<van-cell title="头像" right-icon="https://img.yzcdn.cn/vant/cat.jpeg" is-link url="/vant/mobile.html" value='点击修改头像' />
+
+<van-cell title="账号" is-link url="/vant/mobile.html"/>
+<van-cell title="用户名" is-link url="/vant/mobile.html"/>
+<van-cell title="性别" is-link url="/vant/mobile.html"/>
+<van-cell title="修改密码" is-link url="/vant/mobile.html"/>
+<van-cell title="权限" is-link url="/vant/mobile.html"/>
+
+  </div>
+
+
+</template>
+
+
+<script>
+import { Toast } from 'vant';
+export default {
+  data () {
+    return {
+      filelist:[],
+      avatar: 'https://img.yzcdn.cn/vant/cat.jpeg',
+      active: 0,
+     
+    }
+  },
+  methods: {
+    onClickLeft(){
+       Toast('返回我的页面');
+         this.$router.push('/Mypage');
+    },
+
+
+    changeImage(e) {
+	      const file = e.target.files[0];
+	      const reader = new FileReader();
+	      const that = this;
+	      reader.readAsDataURL(file);
+	      reader.onload = function () {
+	        that.avatar = this.result;
+	      };
+	    },
+
+
+
+       afterRead(file) {
+      //文件读取完成后的回调函数
+      let content = file.file;
+      //创建一个新的FormData
+      let formData = new FormData();
+      // upload这个名字是后台给的
+      formData.append("upload", content);
+      //获取formdata表单所有的数据
+      console.log(formData.getAll(""));
+      // axios
+      //   .post(
+      			//服务器上传地址
+      //     `http://xxxxxxxxxxxx`,
+      		//服务器需要的数据，此处是formdata表单
+      //     formData,
+      		//如果默认请求头是json，需要改一下请求头数据格式
+      //     {
+      //       "Content-Type": "multipart/form-data"
+      //     }
+      //   )
+      //   .then(res => {
+      //     console.log(res);
+      //     console.log(res.config.headers);
+      //   });
+
+      // axios({
+      //   method: "post",
+      //   //服务器上传地址
+      //   url: `http://xxxxxxxxxxxxxxxxxxxxxxxxxxx`,
+      //   data: formData,
+      //   headers: {
+      //     // 修改请求头
+      //     "Content-Type": "multipart/form-data"
+      //   }
+      // }).then(res => {
+      //   console.log(res);
+      //   console.log(res.config.headers);
+      // });
+    }
+
+
+  },
+
+}
+
+</script>
+
+
+<style>
+
+ul.a {list-style-type:circle;}
+ul.b {list-style-type:square;}
+.img-avatar{
+  width:5rem;
+  height:5rem
+ 
+}
+/* ul {
+        width: 1200px;
+        height: 88px;
+        line-height: 88px;
+        margin: 0 auto;
+        background: #3b2d50;
+        color: #fff;
+        font-size: 18px;
+        display: flex;
+         justify-content: space-between;
+       
+       
+  }
+
+   li {
+                text-align: center;
+            }
+            .nav_li {
+                background-color: #dedede;
+                color: #353535;   
+            }        */
+</style>
+
+
+#app {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 2px;
+  height:90%;
+ 
+}

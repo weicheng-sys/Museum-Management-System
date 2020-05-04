@@ -1,13 +1,13 @@
-import Vue from 'vue'
-import router from '@/router'
-import Header from '@/components/header'
+// import Vue from 'vue'
+// import router from '@/router'
+// import Header from '@/components/header'
 
-Vue.config.productionTip = false
+// Vue.config.productionTip = false
 
-/* eslint-disable no-new */
-new Vue({
-  el: '#header',
-  router,
-  components: { Header },
-  template: '<Header/>'
-})
+// /* eslint-disable no-new */
+// new Vue({
+//   el: '#header',
+//   router,
+//   components: { Header },
+//   template: '<Header/>'
+// })
