@@ -42,7 +42,7 @@ ROBOTSTXT_OBEY = False
 DEFAULT_REQUEST_HEADERS = {
   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
   'Accept-Language': 'en',
-    'User-Agent' : 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 Edge/18.18362'
+    'User-Agent' : "Mozilla/5.0(Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.162 Safari/537.36"
 }
 
 # Enable or disable spider middlewares
@@ -67,7 +67,15 @@ DEFAULT_REQUEST_HEADERS = {
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
    'MuseumInformation.pipelines.MuseuminformationPipeline': 300,
+   'MuseumInformation.pipelines.MySQLPipeline': 200,
 }
+
+DB_HOST = 'localhost'
+DB_PORT = 3306
+DB_USER = 'root'
+DB_PASSWORD = '515486wyr'
+DB_NAME = 'db'
+DB_CHARSET = 'utf8'
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html

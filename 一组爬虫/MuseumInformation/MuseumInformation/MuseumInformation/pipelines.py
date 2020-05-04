@@ -5,67 +5,74 @@
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
 # See: https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 import json
-import pymysql
-from MuseumInformation.items import MuseuminformationItem
 class MuseuminformationPipeline(object):
     def __init__(self):
         self.fp = open("tableone.json",'w',encoding='utf-8')
     def open_spider(self, spider):
         print("爬虫开始")
-        # self.config = pymysql.connect(
-        #     host='127.0.0.1',
-        #     # port=3306,
-        #     user='museum',
-        #     port=3306,
-        #     passwd='Museum123',
-        #     db='db',
-        #     charset='utf8')
-        # self.cursor = self.connect.cursor()
 
     def process_item(self, item, spider):
         item_json = json.dumps(dict(item), ensure_ascii=False)
         self.fp.write(item_json+'\n')
         return item
-        # insert_sql = "INSERT INTO hx(mid, mname, ming, evaluate, grade, basic_info, other_info) VALUES (%d, %s, %s, %s, %s, %s, %s)"
-        # self.cursor.execute(insert_sql, (item['mid'], item['mname'], item['ming'], item['evaluate'], item['grade'], item['basic_info'], item['other_info']))
-        # self.client.commit()
-
 
     def close_spider(self, spider):
         self.fp.close()
         print("爬虫结束")
-        # self.cursor.close()
-        # self.connect.close()
 
+# 导入库
+from scrapy.utils.project import get_project_settings
+import pymysql
 
+# 写入数据库
+class MySQLPipeline(object):
+    def connect_db(self):
+        # 从settings.py文件中导入数据库连接需要的相关信息
+        settings = get_project_settings()
 
-#
-# # 连接配置信息
-# config = {
-#     'host': '127.0.0.1',
-#     'port': 3306,
-#     'user': 'museum',
-#     'password': 'Museum123',
-#     'db': 'db',
-#     'charset': 'utf8',
-#     'cursorclass': pymysql.cursors.DictCursor,
-# }
-#
-# # 创建连接
-# connection = pymysql.connect(**config)
-# # # 创建游标方法1
-# # cursor = connection.cursor()
-# # 创建游标方法2 取别名为 cursor
-# with connection.cursor() as cursor:
-#     # # 执行sql语句，插入记录
-#     # sql = 'INSERT INTO employees (first_name, last_name, hire_date, gender, birth_date) VALUES (%s, %s, %s, %s, %s)'
-#     # cursor.execute(sql, ('Robin', 'Zhyea', tomorrow, 'M', date(1989, 6, 14)))  # 插入一条数据
-#     # data为多条数据，放在一个元组或者列表中
-#     cursor.executemany(sql, data)  # 插入多条数据
-# # 没有设置默认自动提交，需要主动提交，以保存所执行的语句
-# connection.commit()  # 连接提交事务
-# cursor.close()  # 关闭游标连接
-# connection.close();  # 关闭连接，释放内存
+        self.host = settings['DB_HOST']
+        self.port = settings['DB_PORT']
+        self.user = settings['DB_USER']
+        self.password = settings['DB_PASSWORD']
+        self.name = settings['DB_NAME']
+        self.charset = settings['DB_CHARSET']
+
+        # 连接数据库
+        self.conn = pymysql.connect(
+            host = self.host,
+            port = self.port,
+            user = self.user,
+            password = self.password,
+            db = self.name,  # 数据库名
+            charset = self.charset,
+        )
+
+        # 操作数据库的对象
+        self.cursor = self.conn.cursor()
+
+    # 连接数据库
+    def open_spider(self, spider):
+        self.connect_db()
+
+    # 关闭数据库连接
+    def close_spider(self, spider):
+        self.cursor.close()
+        self.conn.close()
+
+    # 写入数据库
+    def process_item(self, item, spider):
+        # 写入数据库内容
+        # 这里根据需求自行设置要写入的字段及值
+        sql = 'insert into museum (mid,mname,mimg,evaluate,grade,basic_info, other_info) values ("%s", "%s", "%s","%s", "%s", "%s","%s")' % (item['mid'],item['mname'], item['mimg'], item['evaluate'], item['grade'],item['basic_info'],item['other_info'])
+        #, basic_info, other_info
+        #, item['basic_info'], item['other_info']
+        # 执行sql语句
+        self.cursor.execute(sql)
+
+        # 需要强制提交数据，否则数据回滚之后，数据库为空
+        self.conn.commit()
+
+        return item
 
 import codecs
 # class MuseuminformationPipeline(object):
