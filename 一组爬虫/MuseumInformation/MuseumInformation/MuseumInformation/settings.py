@@ -72,9 +72,9 @@ ITEM_PIPELINES = {
 
 DB_HOST = 'localhost'
 DB_PORT = 3306
-DB_USER = 'root'
-DB_PASSWORD = '515486wyr'
-DB_NAME = 'db'
+DB_USER = '数据库用户名'
+DB_PASSWORD = '数据库密码'
+DB_NAME = '数据库名'
 DB_CHARSET = 'utf8'
 
 # Enable and configure the AutoThrottle extension (disabled by default)
