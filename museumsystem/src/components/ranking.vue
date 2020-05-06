@@ -7,7 +7,7 @@
       <van-col span="20" >
         <form action="/">
           <van-search
-
+            v-on:click="tosearch0"
             v-model="value"
             show-action
             placeholder="请输入搜索关键词"
@@ -22,15 +22,15 @@
 
     <!--轮播图-->
     <van-swipe :autoplay="2500" style="weight: 100% ;height:200px">
-      <van-swipe-item><img :src="imgs[0].url" v-on:click="tohop" style="weight: 100% ; height: 150px"><br></van-swipe-item>
-      <van-swipe-item><img :src="imgs[1].url" v-on:click="tohop" style="weight: 100% ; height: 150px"><br></van-swipe-item>
-      <van-swipe-item><img :src="imgs[2].url" v-on:click="tohop" style="weight: 100% ; height: 150px"><br></van-swipe-item>
+      <van-swipe-item><img :src="newslist[0].nimg[0]" v-on:click="tonewsdl(newslist[0].nid)" style="weight: 100% ; height: 150px"><br></van-swipe-item>
+      <van-swipe-item><img :src="newslist[1].nimg[0]" v-on:click="tonewsdl(newslist[1].nid)" style="weight: 100% ; height: 150px"><br></van-swipe-item>
+      <van-swipe-item><img :src="newslist[2].nimg[0]" v-on:click="tonewsdl(newslist[2].nid)" style="weight: 100% ; height: 150px"><br></van-swipe-item>
     </van-swipe>
    <!-- 标签页，包含（新闻，排行，视频）-->
     <van-tabs v-model="active2" >
 
       <van-tab title="视频" name="视频">
-        <vidio></vidio>
+        <Vidio></Vidio>
       </van-tab>
 
       <van-tab title="新闻"  name="新闻" >
@@ -71,6 +71,7 @@
             list: [],
             value:'',
             active2: '新闻',
+            newslist:[],
             active: 'home',
             imgs:[
 
@@ -84,6 +85,9 @@
             ]
           };
         },
+      created() {
+          this.getlist2();
+      },
       methods: {
         onCancel() {
 
@@ -105,9 +109,7 @@
             }
           }, 1000);
         },
-        tohop(){
-       this.$router.push('/tohoprank')
-       },
+
         onSearch(val) {
           var t = this
           this.axios.get('https://v1.alapi.cn/api/new/toutiao?start=1&num=100').then((res)=>{
@@ -122,6 +124,22 @@
 
 
         },
+        tosearch0(){
+          this.$router.push("/search0");
+        },
+        tonewsdl( nid){
+          this.$router.push({name: 'newsdl', params: {id: nid ,list:this.newslist}})
+
+        },
+        getlist2(){
+          var _self=this;
+          console.log("轮播图news获取")
+          this.$http.get("http://localhost:8989/imsub/News/findAll").then((response) => {
+            _self.newslist=response.data.result;
+            console.log(_self.newslist);
+
+          })
+        },
 
       }
     }
@@ -129,6 +147,6 @@
 
 <style >
 .bgset{
-  background: #50a1e6;
+  background: rgba(80, 130, 230, 0.99);
 }
 </style>

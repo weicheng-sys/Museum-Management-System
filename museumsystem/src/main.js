@@ -18,6 +18,31 @@ import { Panel } from 'vant';
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 import { Sticky } from 'vant';
+import { Grid, GridItem } from 'vant';
+import { Divider } from 'vant';
+import { Rate } from 'vant';
+import { Progress } from 'vant';
+import { Field } from 'vant';
+import { Button } from 'vant';
+import { Pagination } from 'vant';
+import { NoticeBar } from 'vant';
+import { Toast } from 'vant';
+import { Slider } from 'vant';
+import { RadioGroup, Radio } from 'vant';
+
+Vue.use(Radio);
+Vue.use(RadioGroup);
+Vue.use(Slider);
+Vue.use(Toast)
+Vue.use(NoticeBar);
+Vue.use(Pagination);
+Vue.use(Button);
+Vue.use(Field);
+Vue.use(Progress);
+Vue.use(Rate);
+Vue.use(Divider);
+Vue.use(Grid);
+Vue.use(GridItem);
 Vue.use(Sticky);
 /*import VueResource from 'vue-resource'
 Vue.use(VueResource)*/

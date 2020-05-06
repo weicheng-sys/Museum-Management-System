@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.museum.imsub.dao.MDLDAO">
+    <select id="findAll" resultType="MDL">
+        select * from museum
+    </select>
+    <update id="update" parameterType="MDL">
+        update museum
+        set grade=#{grade},grade_1=#{grade_1},grade_2=#{grade_2},grade_3=#{grade_3}
+        where mid=#{mid}
+    </update>
+
+
+    <select id="findByid" parameterType="int" resultType="MDL">
+         select * from museum where mid = #{id}
+    </select>
+    <select id="findBYGrade" resultType="MDL">
+        select * from museum order by grade desc ;
+    </select>
+    <select id="findBYGrade1" resultType="MDL">
+        select * from museum order by grade_1 desc ;
+    </select>
+    <select id="findBYGrade2" resultType="MDL">
+        select * from museum order by grade_2 desc ;
+    </select>
+    <select id="findBYGrade3" resultType="MDL">
+        select * from museum order by grade_3 desc ;
+    </select>
+
+</mapper>

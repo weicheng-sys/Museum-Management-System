@@ -20,19 +20,27 @@
        :finished="finished"
        finished-text="没有更多了"
        @load="onLoad"
+
      >
 
        <van-cell v-for="(item,index) in list" :key="index" >
-         <van-panel style="position: relative;"  @click='xiang(index)'>
-           <template #footer>
-             <van-image width="100" height="100" :src="list[index].mimg"/>
-             <span style="position: absolute;top: 5px; font-size: 15px;">
-               名称：{{list[index].mname}}
-             </span>
-             <span style="position: absolute;top: 30px; font-size: 15px;">
-               基本信息：{{list[index].basic_info | ellipsis }}
-             </span>
-           </template>
+         <van-panel  @click='xiang(index)'>
+           <van-row>
+             <van-col  style="text-align: left;font-size: 18px">
+               {{item.title}}
+             </van-col>
+
+           </van-row>
+           <van-row>
+             <van-col span="16" style="text-align: left;font-size: 12px">
+               <br><br>{{item.mname}}<br>
+               {{item.publisher}}
+             </van-col>
+             <van-col span="8">
+               <img :src=item.nimg[0] style="width:100%;height:80px;" />
+             </van-col>
+           </van-row>
+
          </van-panel>
        </van-cell>
      </van-list>
@@ -44,7 +52,7 @@
 <script>
 
 export default {
-  name: 'Search1',
+  name: 'Search2',
 
   filters:{
     ellipsis(value){
@@ -68,7 +76,7 @@ export default {
   }
   },
   beforeRouteEnter: (to,from,next) => {
-    if(to.name === 'mdetails'){
+    if(to.name === 'newsdl'){
       from.meta.keepAlive = true;
     }else{
       from.meta.keepAlive = false;
@@ -82,21 +90,19 @@ export default {
       if(this.$route.params.keyword)
       this.keyword= this.$route.params.keyword
       var t = this
-      this.axios.get('http://localhost:8989/imsub/MDL/findAll').then((res)=>{
-        console.log("博物馆")
-        console.log(res.data.result);
+      this.axios.get('http://localhost:8989/imsub/News/findAll').then((res)=>{
         t.lists = res.data.result
         if(t.keyword!=''){
-          let lists = t.lists.filter(item=>(item.mname.toString().indexOf(t.keyword)>=0||item.basic_info.toString().indexOf(t.keyword)>=0
+          let lists = t.lists.filter(item=>(item.title.toString().indexOf(t.keyword)>=0||item.content.toString().indexOf(t.keyword)>=0
+            ||item.mname.toString().indexOf(t.keyword)>=0
         ));
           t.list=lists;
-
         }
       })
     },
     onSearch(){
       if(this.keyword!=''){
-        let lists = this.lists.filter(item=>(item.mname.toString().indexOf(this.keyword)>=0||item.basic_info.toString().indexOf(this.keyword)>=0
+        let lists = this.lists.filter(item=>(item.title.toString().indexOf(this.keyword)>=0||item.content.toString().indexOf(this.keyword)>=0
         ));
         this.list=lists;
       }
@@ -125,9 +131,9 @@ export default {
       }, 1000);
     },
     xiang:function(index){
-      this.$router.push({name:'mdetails',
+      this.$router.push({name:'newsdl',
                       params:{
-                        id:this.list[index].mid,
+                        id:this.list[index].nid,
                       }
                     })
     }

@@ -43,7 +43,7 @@
 
 <script>
   export default {
-    name: "ranklists",
+    name: "ranklists1",
     data(){
       return{
         list: [],
