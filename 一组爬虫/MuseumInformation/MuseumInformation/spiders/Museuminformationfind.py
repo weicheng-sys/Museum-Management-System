@@ -47,6 +47,9 @@ class MuseuminformationFind(scrapy.Spider):  #必须继承spider类
             else:
                 yield scrapy.Request(url, callback=lambda response , num=i: self.parse1(response, num))  #调用爬虫程序
 
+            # if i == 4:
+            #     yield scrapy.Request(url, callback=lambda response, num=i: self.parse1(response, num))  # 调用爬虫程序
+
             i += 1
 
     def parse1(self, response,i):
@@ -124,9 +127,10 @@ class MuseuminformationFind(scrapy.Spider):  #必须继承spider类
         while i < len(vvalues):
             t = vvalues[i].replace('\n', '')
             tt = t.replace('\xa0', '')
-            ttt = tt.replace('\"','')
-            print(ttt)
-            val.append(ttt)
+            ttt = tt.replace('\'','')
+            tttt = ttt.replace('\"', '')
+            print(tttt)
+            val.append(tttt)
             i += 1
 
         for i, j in zip(key, val):
