@@ -66,15 +66,13 @@ DEFAULT_REQUEST_HEADERS = {
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   'MuseumInformation.pipelines.MuseuminformationPipeline': 300,
    'MuseumInformation.pipelines.MySQLPipeline': 200,
 }
 
-DB_HOST = 'localhost'
-DB_PORT = 3306
-DB_USER = '数据库用户名'
-DB_PASSWORD = '数据库密码'
-DB_NAME = '数据库名'
+DB_HOST = 'rm-8vb178367o06xa531do.mysql.zhangbei.rds.aliyuncs.com'
+DB_USER = 'passer'
+DB_PASSWORD = 'xxxyJK1702'
+DB_NAME = 'museum_news'
 DB_CHARSET = 'utf8'
 
 # Enable and configure the AutoThrottle extension (disabled by default)
