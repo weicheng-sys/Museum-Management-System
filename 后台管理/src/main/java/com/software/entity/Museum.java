@@ -17,6 +17,9 @@ public class Museum {
     String ming;
     String evaluate;
     double grade;
+    double grade_1;
+    double grade_2;
+    double grade_3;
     String basic_info;
     String other_info;
 }

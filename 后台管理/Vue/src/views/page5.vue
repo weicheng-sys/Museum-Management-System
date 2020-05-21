@@ -2,7 +2,7 @@
     <div>
         <el-table
                 :data="tableData"
-                style="width: 100%">
+                style="width: 100%;">
             <el-table-column
                     fixed
                     prop="uname"
@@ -32,7 +32,7 @@
                 @current-change="page">
         </el-pagination>
 
-        <el-form style="width: 60%" :model="ruleForm" :rules="rules" ref="ruleForm" label-width="100px" class="demo-ruleForm">
+        <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="100px" class="demo-ruleForm">
             <el-form-item label="管理员账号" prop="uname">
                 <el-input v-model="ruleForm.uname"></el-input>
             </el-form-item>
@@ -41,7 +41,7 @@
                 <el-input v-model="ruleForm.upwd"></el-input>
             </el-form-item>
 
-            <el-form-item>
+            <el-form-item >
                 <el-button type="primary" @click="submitForm('ruleForm')">添加</el-button>
                 <el-button @click="resetForm('ruleForm')">重置</el-button>
             </el-form-item>

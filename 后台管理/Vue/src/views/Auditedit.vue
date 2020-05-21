@@ -121,6 +121,7 @@
                 console.log('收到'+_this.$route.query.vid)
                 _this.axios.get('/video/findByvid?vid=' + _this.$route.query.vid).then(function (resp) {
                     _this.ruleForm = resp.data
+                    _this.ruleForm.vaddr='http://39.98.108.11:8081/files'+_this.ruleForm.vaddr
                 })
             },
             watch: {

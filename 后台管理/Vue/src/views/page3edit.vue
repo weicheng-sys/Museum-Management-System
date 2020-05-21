@@ -71,6 +71,8 @@
             _this.axios.get('/video/findByvid?vid='+vid).then(function(resp){
                 //console.log(resp.data);
                 _this.ruleForm=resp.data
+                _this.ruleForm.vaddr='http://39.98.108.11:8081/files'+_this.ruleForm.vaddr
+                //console.log(_this.ruleForm.vaddr)
             })
 
         },

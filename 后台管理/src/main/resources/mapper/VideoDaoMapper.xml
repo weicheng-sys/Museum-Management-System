@@ -71,8 +71,10 @@
         where vid=#{vid}
     </update>
 
-    <delete id="fail" parameterType="int">
-        delete from video
+    <update id="fail" parameterType="int">
+        update video
+        set status=2
         where vid=#{vid}
-    </delete>
+    </update>
+
 </mapper>

@@ -10,11 +10,20 @@
             </el-form-item>
 
             <el-form-item label="评价">
-                <el-input v-model="form.evaluate"></el-input>
+                <el-input type="textarea" v-model="form.evaluate"></el-input>
             </el-form-item>
 
-            <el-form-item label="评分">
+            <el-form-item label="总评分">
                 <el-input v-model="form.grade"></el-input>
+            </el-form-item>
+            <el-form-item label="展览评分">
+                <el-input v-model="form.grade_1"></el-input>
+            </el-form-item>
+            <el-form-item label="服务评分">
+                <el-input v-model="form.grade_2"></el-input>
+            </el-form-item>
+            <el-form-item label="环境评分">
+                <el-input v-model="form.grade_3"></el-input>
             </el-form-item>
 
             <el-form-item label="基本信息">

@@ -1,18 +1,19 @@
 <template>
     <div class="login">
+      <p class="tit">后台管理</p>
       <el-form :model="ruleForm" :rules="rules"  label-width="100px" >
         
         <el-form-item label="账号" prop="uname">
-          <el-input v-model="ruleForm.uname" ></el-input>
+          <el-input v-model="ruleForm.uname" style="width: 75%;"></el-input>
         </el-form-item>
  
         <el-form-item label="密码" prop="upwd">
-          <el-input type="password" v-model="ruleForm.upwd" ></el-input>
+          <el-input type="password" v-model="ruleForm.upwd" style="width: 75%;"></el-input>
         </el-form-item>
 
  
         <el-form-item>
-          <el-button type="primary" @click="submitForm('ruleForm')" style="width:100%;">登录</el-button>
+          <el-button type="primary" @click="submitForm('ruleForm')" style="width:60%;">登录</el-button>
         <!--  <el-button @click="resetForm('ruleForm')">重置</el-button> -->
         </el-form-item>
       </el-form>
@@ -127,10 +128,17 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .login{
-
+  background-color: rgb(102,249,207,.8);
+  border-radius: 25px;
   width: 25%;
+  height: 75%;
   position:absolute;
-  margin: 250px 500px ;
+  margin: 50px 500px ;
+}
+.tit{
+  font-family: STXinwei;
+  font-size: 50px;
+  text-align: center;
 }
 .lf{
   float: left;

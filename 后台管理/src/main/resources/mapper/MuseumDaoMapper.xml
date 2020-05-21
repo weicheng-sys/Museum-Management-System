@@ -5,7 +5,8 @@
 
     <update id="update" parameterType="Museum">
         update museum
-        set mname=#{mname},evaluate=#{evaluate},grade=#{grade},basic_info=#{basic_info},other_info=#{other_info}
+        set mname=#{mname},evaluate=#{evaluate},grade=#{grade},basic_info=#{basic_info},other_info=#{other_info},
+        grade_1=#{grade_1},grade_2=#{grade_2},grade_3=#{grade_3}
         where mid=#{mid}
     </update>
 

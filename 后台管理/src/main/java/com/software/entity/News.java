@@ -23,7 +23,7 @@ public class News {
     String content;
     String nimg;
 
-    //@DateTimeFormat
+    @DateTimeFormat
     String ntime;
     String publisher;
     String mname;
