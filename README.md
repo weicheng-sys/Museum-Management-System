@@ -3,24 +3,29 @@
 ## 第1组：博物馆网站数据采集子系统
 
 ### 数据库表
+#### 1 博物馆信息表（museum）
+| 字段 | 博物馆编号 | 博物馆名称|图片|评价|综合评分|基本信息|其他信息|展览评分|服务评分|环境评分|
+| :--: | :--------: | :---------: | :---------: | :---------: | :---------: | :---------: |:----:|:----:|:----:|:----:|
+| 命名 |mid| mname|mimg|evaluate|grade|basic_info|other_info|grade_1|grade_2|grade_3|
+| 类型 |int| varchar(50) | text | text | double| text | text |double|double|double|
 
-### 博物馆基础信息表
+#### 2 新闻表(news)
+| 字段 | 新闻编号 |  新闻标题   | 新闻内容 |  新闻图片   |  发布时间   |   发布方    |博物馆名称 |评价|爬取源|
+| :--: | :------: | :---------: | :------: | :---------: | :---------: | :---------: |:----:|:----:|:----:|
+| 命名 |   nid    |    title    | content  |    nimg     |    ntime    |  publisher  |mname|evaluation|source|
+| 类型 |   int    | varchar(50) |   text   | text | varchar(50) | varchar(50) |varchar(50) |varchar(50)|varchar(50)|
 
-| 博物馆编号 | 博物馆名称 | 博物馆地点     | 博物馆类别   | 展区数量 | 建馆时间     | 图片    | 用户视频或音频 | 门票   | 开放时间     | 藏品数量      | 藏品种类       | 评价     | 评分  |
-| ---------- | ---------- | -------------- | ------------ | -------- | ------------ | ------- | -------------- | ------ | ------------ | ------------- | -------------- | -------- | ----- |
-| museumId   | museumName | museumPosition | buildingType | number   | buildingTime | picture | VideoAudio     | ticket | openingHours | collectionNum | collectionType | evaluate | grade |
+#### 3 用户表(user)
+| 字段 |    用户编号     |    密码     |    账号     |  性别   |    权限     |     简介     | 头像        |手机|
+| :--: | :---------: | :---------: | :---------: | :-----: | :---------: | :----------: | ----------- |:----:|
+| 命名 |     uid     |    upwd     |    uname    | gender  |  authority  | introduction | icon        |phone|
+| 类型 | int | varchar(50) | varchar(50) | varchar(50) | int |     text     | text |varchar(50)|
 
-### 博物馆展览表
-
-| 博物馆编号 | 展览编号         | 主题（朝代、类别） | 时间           | 介绍      |
-| ---------- | ---------------- | ------------------ | -------------- | --------- |
-| museumId   | exhibitionNumber | exhibitionTheme    | exhibitionTime | introduce |
-
-### 博物馆经典藏品表
-
-| 博物馆编号 | 名称           | 图片              | 年代  | 说明    | 尺寸 | 来源   | 质地    | 出土时间（可选） | 文物等级（可选）     |
-| ---------- | -------------- | ----------------- | ----- | ------- | ---- | ------ | ------- | ---------------- | -------------------- |
-| museumId   | collectionName | collectionPicture | years | explain | size | source | texture | unearthedTime    | culturalRelics Grade |
+#### 4 视频表(video)
+| 字段 | 视频编号 |    账号     | 博物馆编号 |   视频名    |  视频位置   | 视频介绍 |状态|
+| :--: | :------: | :---------: | :--------: | :---------: | :---------: | :------: |:----:|
+| 命名 |   vid    |     uid     |    mid     |    vname    |    vaddr    |  vinfo   |status|
+| 类型 |   int    | int |    int     | varchar(50) |   text   |   text   |int|
 
 ### 博物馆网站数据采集子系统
 
