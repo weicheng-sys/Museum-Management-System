@@ -7,5 +7,11 @@
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:D:\Python\web_crawler\MuseumNews\museumNews\spiders\dbs\museumNews.db</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="SpiderKeeper" uuid="027685bf-936f-420f-ba74-ccb562355303">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:D:\Python\web_crawler\MuseumNews\SpiderKeeper.db</jdbc-url>
+    </data-source>
   </component>
 </project>

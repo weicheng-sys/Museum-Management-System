@@ -39,7 +39,8 @@ class CankaoNewsSpider(scrapy.Spider):
         i["museumName"] = museum_name
         i["source"] = "参考消息网"
         content = response.xpath('//*[@id="ctrlfscont"]/p/text()').extract()
-        if content:
+        contentStr = " ".join(content)
+        if contentStr.count(museum_name) >= 1:
             i["newsTitle"] = response.xpath("/html/head/title/text()").extract()[0]#各级结构
             i['newsContent'] = "".join(content)
             i['newsPicture']=response.xpath('//*[@id="ctrlfscont"]/p[1]/a/img/@src').extract()
@@ -48,8 +49,10 @@ class CankaoNewsSpider(scrapy.Spider):
             # print(dict(i))
             i["publishTime"] = response.xpath("//*[@id='pubtime_baidu']//text()").getall()[0]
             i["publisher"] = "".join(response.xpath("//*[@id='source_baidu']//text()").extract())
-            yield i
-        else: pass
+        else:
+            i['newsContent']=""
+        yield i
+
 
 
 

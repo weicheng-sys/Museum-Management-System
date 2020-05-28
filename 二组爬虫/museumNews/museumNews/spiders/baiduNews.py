@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+
 import scrapy
 import re
 from urllib.parse import unquote
@@ -16,7 +17,7 @@ class BaidunewsSpider(scrapy.Spider):
         # 定义爬取的链接
         urls = self.museum_names
         for url in urls:
-            for i in range(1, 10):  # 页数
+            for i in range(1, 5):  # 页数
                 yield scrapy.Request(url=url, callback=self.parse)
                 url = re.sub('pn=\d+', "pn=" + str(i * 10), url)
 

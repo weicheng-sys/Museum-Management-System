@@ -23,11 +23,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../HB/WeChat Files/WeChat Files/Zednight622/FileStorage/File/2020-05/MuseumInformation/MuseumInformation" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Python\web_crawler\MuseumNews\museumNews" />
       <recent name="D:\Python\web_crawler\MuseumNews" />
       <recent name="D:\Python\web_crawler\MuseumNews\museumNews\spiders" />
     </key>
@@ -103,7 +104,19 @@
       <workItem from="1587991966936" duration="245000" />
       <workItem from="1587992228163" duration="2261000" />
       <workItem from="1587997223931" duration="5379000" />
-      <workItem from="1588504765533" duration="2581000" />
+      <workItem from="1588504765533" duration="3179000" />
+      <workItem from="1588510209543" duration="2120000" />
+      <workItem from="1588565538858" duration="6605000" />
+      <workItem from="1588643288476" duration="59000" />
+      <workItem from="1588645285903" duration="704000" />
+      <workItem from="1589095168063" duration="2266000" />
+      <workItem from="1589163813281" duration="11000" />
+      <workItem from="1589168527280" duration="1241000" />
+      <workItem from="1589528085046" duration="93000" />
+      <workItem from="1589718257817" duration="1872000" />
+      <workItem from="1589724065067" duration="77000" />
+      <workItem from="1590111866845" duration="72000" />
+      <workItem from="1590111960521" duration="7455000" />
     </task>
     <servers />
   </component>
@@ -111,37 +124,41 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="219" y="80" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587879448818">
+    <state x="219" y="80" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588566068831">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="219" y="80" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1587879448818" />
-    <state x="496" y="130" key="FileChooserDialogImpl" timestamp="1587893731985">
+    <state x="219" y="80" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1588566068831" />
+    <state x="496" y="130" key="FileChooserDialogImpl" timestamp="1588643346396">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="496" y="130" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1587893731985" />
-    <state width="1487" height="673" key="GridCell.Tab.0.bottom" timestamp="1588505239186">
+    <state x="496" y="130" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1588643346396" />
+    <state width="1487" height="673" key="GridCell.Tab.0.bottom" timestamp="1590123070767">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1487" height="673" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1588505239186" />
-    <state width="1487" height="673" key="GridCell.Tab.0.center" timestamp="1588505239186">
+    <state width="1487" height="673" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1590123070767" />
+    <state width="1487" height="673" key="GridCell.Tab.0.center" timestamp="1590123070767">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1487" height="673" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1588505239186" />
-    <state width="1487" height="673" key="GridCell.Tab.0.left" timestamp="1588505239186">
+    <state width="1487" height="673" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1590123070767" />
+    <state width="1487" height="673" key="GridCell.Tab.0.left" timestamp="1590123070767">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1487" height="673" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1588505239186" />
-    <state width="1487" height="673" key="GridCell.Tab.0.right" timestamp="1588505239186">
+    <state width="1487" height="673" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1590123070767" />
+    <state width="1487" height="673" key="GridCell.Tab.0.right" timestamp="1590123070767">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1487" height="673" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1588505239186" />
-    <state x="190" y="0" key="SettingsEditor" timestamp="1587879492177">
+    <state width="1487" height="673" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1590123070767" />
+    <state x="190" y="0" key="SettingsEditor" timestamp="1589724145356">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="190" y="0" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1587879492177" />
+    <state x="190" y="0" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1589724145356" />
+    <state x="347" y="-1" key="search.everywhere.popup" timestamp="1588513319854">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="347" y="-1" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1588513319854" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/MuseumNews$DateTime.coverage" NAME="DateTime Coverage Results" MODIFIED="1587886267250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestDate" />
-    <SUITE FILE_PATH="coverage/MuseumNews$StartCrawl.coverage" NAME="StartCrawl Coverage Results" MODIFIED="1588505156007" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MuseumNews$StartCrawl.coverage" NAME="StartCrawl Coverage Results" MODIFIED="1590115502944" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

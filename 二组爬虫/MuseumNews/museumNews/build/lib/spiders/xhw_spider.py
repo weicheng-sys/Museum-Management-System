@@ -36,7 +36,8 @@ class PachongSpiderSpider(scrapy.Spider):
         museum_name = response.meta['item']
         i = MuseumnewsItem()
         content = response.xpath('//*[@id="p-detail"]/p/text()').extract()
-        if content:
+        contentStr = " ".join(content)
+        if contentStr.count(museum_name) >= 1:
             i["museumName"] = museum_name
             i["source"] = "新华网"
             i["newsTitle"] = response.xpath("/html/head/title/text()").extract_first()
@@ -49,4 +50,7 @@ class PachongSpiderSpider(scrapy.Spider):
                 i["newsPicture"] = response.xpath('//*[@id="p-detail"]/p/img/@src').extract()
             i["publishTime"] = response.xpath("/html/body/div[2]/div[3]/div/div[2]/span[1]/text()").extract_first()
             i["publisher"] = "新华网"
-            yield i
+        else:
+            i['newsContent'] = ""
+        yield i
+

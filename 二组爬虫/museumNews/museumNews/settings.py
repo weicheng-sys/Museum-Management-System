@@ -46,7 +46,7 @@ DEFAULT_REQUEST_HEADERS = {
 }
 
 
-LOG_LEVEL = 'ERROR'
+LOG_LEVEL = 'DEBUG'
 # Enable or disable spider middlewares
 # See https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
