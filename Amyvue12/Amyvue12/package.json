@@ -12,7 +12,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "vant": "^2.6.2",
     "video.js": "^7.7.5",
     "vue": "^2.5.2",
